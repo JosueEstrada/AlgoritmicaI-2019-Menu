@@ -2,4 +2,4 @@
 # ESTRADA LÓPEZ Josué
 # ROJAS CARPIO Lucas
 # LIZANA YAURI Alexander
-# GOMEZ HUANCA Elia
+# GOMEZ HUANCA Elian
