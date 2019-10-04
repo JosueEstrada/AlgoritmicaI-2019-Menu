@@ -1,0 +1,41 @@
+menu="""MENU DE OPCIONES
+  1.- Ingreso de datos del trabajador
+  2.- Calculo del porcentaje
+  3.- Calculo del pago total
+  0.- SALIR"""
+opc=''
+while opc !='0':
+  print(menu)
+  opc=str(input("Ingrese opcion:"))
+  print("\n")
+  if opc=='0':
+    print("SALIDA EXITOSA")
+  elif opc=='1':
+    print("Para volver al menu, digite -1")
+    sueldotot=0
+    cont1=0
+    cont2=0
+    contaPers=0
+    n=int(input("Ingrese numero de trabajadores:"))
+    print("*******GLORIA SUELDOS*******\n")
+    for i in range (n):
+        nombre=input("Ingrese nombre:")
+        sueldo=int(input("Ingrese sueldo:"))
+        if (sueldo >= 1000 and sueldo <= 1500):
+            cont1= cont1 + 1
+        if (sueldo > 1500 and sueldo <=2000):
+            cont2= cont2 + 1
+        sueldotot = sueldotot + sueldo
+        #print(nombre,": S/.", sueldo)
+        contaPers=contaPers+1
+    print("\n")
+  elif opc=='2':
+    print("\n")
+    print("Porcentaje de sueldo entre 1000-1500 es :")
+    print((100*cont1)/contaPers,"%")
+    print("Porcentaje de sueldo entre 1500-2000 es :")
+    print((100*cont2)/contaPers, "%")
+  elif opc=='3':
+    print("\n SUELDO TOTAL:", sueldotot)
+  else:
+    print("ERROR opcion")
