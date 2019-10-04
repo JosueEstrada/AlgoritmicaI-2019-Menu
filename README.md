@@ -1,1 +1,5 @@
 # AlgoritmicaI-2019-Menu
+ESTRADA LÓPEZ Josué
+CARPIO ROJAS Lucas
+LIZANA YAURI Alexander
+GOMEZ HUANCA Elia
